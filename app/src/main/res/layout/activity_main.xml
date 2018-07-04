@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pencil"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginLeft="@dimen/twenty_five_dp"
+            android:layout_marginTop="150dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_games_black_24dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_five_dp"
+            android:layout_marginTop="@dimen/twenty_five_dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/app_name_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_five_dp"
+            android:layout_marginTop="@dimen/tagline_margin"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/tagline"
+            android:textSize="@dimen/tagline_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/hundred_dp"
+            android:text="@string/login_button"
+            android:theme="@style/MyButton" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyButton" >
+        <item name="colorControlHighlight">#E0E0E0</item>
+        <item name="colorButtonNormal">#9E9E9E</item>
+    </style>
+
+    <style name="options">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/answer_border</item>
+        <item name="android:padding">@dimen/padding_others</item>
+        <item name="android:textSize">@dimen/options_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+    <style name="question_answer">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/gradient</item>
+        <item name="android:layout_marginTop">@dimen/padding_top</item>
+        <item name="android:layout_marginLeft">@dimen/padding_others</item>
+        <item name="android:layout_marginRight">@dimen/padding_others</item>
+        <item name="android:layout_marginBottom">@dimen/padding_others</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/question_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">@dimen/questions_height</item>
+        <item name="android:padding">@dimen/margin</item>
+    </style>
+
+    <style name="hidden_answer">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/answer_size</item>
+    </style>
+
+    <style name="rule_heading">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/rule_heading</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+    <style name="rules">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tagline_size</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+</resources>

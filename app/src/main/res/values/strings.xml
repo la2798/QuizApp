@@ -1,0 +1,75 @@
+<resources>
+    <string name="content_description">logo</string>
+    <string name="app_name">InQUIZitive</string>
+    <string name="tagline">For Inquisitive minds !</string>
+    <string name="login_button">Start</string>
+    <string name="entry_button">Lets start</string>
+    <string name="submit_button">Submit</string>
+    <string name="hint">Enter your answer here</string>
+    <string name="congratulating_user">Nice attempt there !</string>
+    <string name="display_score">Your score is : </string>
+    <string name="answer_viewing">If you wish to see the correct answers , press the button </string>
+    <string name="r_1">Rule 1</string>
+    <string name="r_2">Rule 2</string>
+    <string name="r_3">Rule 3</string>
+    <string name="intro">Rules and grading scheme are : </string>
+    <string name="rule_1">*) This a basic android quiz and consists of 10 questions</string>
+    <string name="rule_2">*) Each correct answer will be awarded 5 marks</string>
+    <string name="rule_3">*) For questions with multiple answers , you should mark all the correct answers which will fetch 5 marks
+    else it will be awarded 0 marks</string>
+    <string name="rule_4">*) There is no negative marking</string>
+    <string name="good_luck">All the best !</string>
+    <string name="dialog_title">Well done !</string>
+    <string name="dialog_content">Great going there ! Your score is :</string>
+    <string name="ans_view_confirm">If you wish you go through the answers , click yes</string>
+    <string name="answer_5">view class</string>
+    <string name="answer_5_text">The correct answer is "view class"</string>
+    <string name="answer_8">food</string>
+    <string name="answer_8_text">The correct answer is "food"</string>
+    <string name="question_1">Q1. Android is based on linux for the following reasons</string>
+    <string name="question_1_option_1">a. Security</string>
+    <string name="question_1_option_2">b. Portability</string>
+    <string name="question_1_option_3">c. Networking</string>
+    <string name="question_1_option_4">d. None of these</string>
+    <string name="question_2">Q2. During an Activity life-cycle, what is the first callback method
+invoked by the system?</string>
+    <string name="question_2_option_1">a. onStop()</string>
+    <string name="question_2_option_2">b. onStart()</string>
+    <string name="question_2_option_3">c. onCreate()</string>
+    <string name="question_2_option_4">d. onRestore()</string>
+    <string name="question_3">Q3. Which configuration file holds the permission to use the
+        internet?</string>
+    <string name="question_3_option_1">a. Layout file</string>
+    <string name="question_3_option_2">b. Property file</string>
+    <string name="question_3_option_3">c. Java source file</string>
+    <string name="question_3_option_4">d. Manifest file</string>
+    <string name="question_4">Q4. Which are the three main components of the APK?</string>
+    <string name="question_4_option_1">a. Dalvik Executable</string>
+    <string name="question_4_option_2">b. Resources</string>
+    <string name="question_4_option_3">c .Native libraries</string>
+    <string name="question_4_option_4">d. Webkit</string>
+    <string name="question_5">Q5. What is the parent class of all Activity widgets?
+</string>
+    <string name="question_6">Q6. Which of the following is not a valid Android resource file
+        name?</string>
+    <string name="question_6_option_1">a. mylayout.xml</string>
+    <string name="question_6_option_2">b. myLayout.xml</string>
+    <string name="question_6_option_3">c. my_layout.xml</string>
+    <string name="question_6_option_4">d. mylayout1.xml</string>
+    <string name="question_7">Q7. Which one is not a nickname of a version of android?</string>
+    <string name="question_7_option_1">a. Cupcake</string>
+    <string name="question_7_option_2">b. Kitkat</string>
+    <string name="question_7_option_3">c. Garlic bread</string>
+    <string name="question_7_option_4">d. Honeycomb</string>
+    <string name="question_8">Q8. Android releases since 1.5 have been given names derived from</string>
+    <string name="question_9">Q9. Which method is used to close an activity?</string>
+    <string name="question_9_option_1">a. Destroy( )</string>
+    <string name="question_9_option_2">b. Finish( )</string>
+    <string name="question_9_option_3">c. Stop( )</string>
+    <string name="question_9_option_4">d. Close( )</string>
+    <string name="question_10">Q10. What is true about the AndroidManifest.xml file?</string>
+    <string name="question_10_option_1">a. It declares the views used within the application</string>
+    <string name="question_10_option_2">b. It declares user permissions the application requires</string>
+    <string name="question_10_option_3">c. It declares application components</string>
+    <string name="question_10_option_4">d. It declares hardware and software features used within the application</string>
+</resources>
