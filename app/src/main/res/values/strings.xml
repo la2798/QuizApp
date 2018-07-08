@@ -5,6 +5,7 @@
     <string name="login_button">Start</string>
     <string name="entry_button">Lets start</string>
     <string name="submit_button">Submit</string>
+    <string name="finish_button">Finish</string>
     <string name="hint">Enter your answer here</string>
     <string name="congratulating_user">Nice attempt there !</string>
     <string name="display_score">Your score is : </string>

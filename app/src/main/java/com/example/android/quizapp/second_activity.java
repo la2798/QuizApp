@@ -21,6 +21,7 @@ public class second_activity extends AppCompatActivity {
     TextView ques_5_correct_ans;
     TextView ques_8_correct_ans;
     Button submit_button;
+    Button finish;
     CheckBox que_1_op_1;
     CheckBox que_1_op_2;
     CheckBox que_1_op_3;
@@ -110,6 +111,8 @@ public class second_activity extends AppCompatActivity {
         que_10_op_3 = (CheckBox) findViewById(R.id.question_10_option_3);
         que_10_op_4 = (CheckBox) findViewById(R.id.question_10_option_4);
         submit_button = (Button) findViewById(R.id.submit_button);
+        finish = (Button) findViewById(R.id.finish_button);
+        finish.setEnabled(false);
         submit_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,6 +129,16 @@ public class second_activity extends AppCompatActivity {
 
                 Toast.makeText(second_activity.this, "Score :" + score, Toast.LENGTH_SHORT).show();
                 dialog();
+                finish.setEnabled(true);
+            }
+        });
+        finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(second_activity.this,
+                        MainActivity.class);
+                startActivity(myIntent);
+
             }
         });
     }
@@ -151,24 +164,26 @@ public class second_activity extends AppCompatActivity {
                     }
 
                 }).create().show();
+
+        submit_button.setEnabled(false);
     }
 
     private void check_que_1_ans() {
-        if ((que_1_op_1.isChecked()) && (que_1_op_2.isChecked()) && (que_1_op_3.isChecked())) {
+        if ((que_1_op_1.isChecked()) && (que_1_op_2.isChecked()) && (que_1_op_3.isChecked()) && !(que_1_op_4.isChecked())) {
             que_1_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_3.setBackgroundColor(getResources().getColor(R.color.green));
             score += 5;
         } else if (que_1_op_1.isChecked()) {
-            que_1_op_1.setBackgroundResource(R.drawable.border);
+            que_1_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_3.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (que_1_op_2.isChecked()) {
-            que_1_op_2.setBackgroundResource(R.drawable.border);
+            que_1_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_3.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (que_1_op_3.isChecked()) {
-            que_1_op_3.setBackgroundResource(R.drawable.border);
+            que_1_op_3.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_2.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (que_1_op_4.isChecked()) {
@@ -176,18 +191,6 @@ public class second_activity extends AppCompatActivity {
             que_1_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_3.setBackgroundColor(getResources().getColor(R.color.green));
-        } else if ((que_1_op_2.isChecked()) && (que_1_op_3.isChecked())) {
-            que_1_op_2.setBackgroundResource(R.drawable.border);
-            que_1_op_3.setBackgroundResource(R.drawable.border);
-            que_1_op_1.setBackgroundColor(getResources().getColor(R.color.green));
-        } else if ((que_1_op_1.isChecked()) && (que_1_op_2.isChecked())) {
-            que_1_op_1.setBackgroundResource(R.drawable.border);
-            que_1_op_2.setBackgroundResource(R.drawable.border);
-            que_1_op_3.setBackgroundColor(getResources().getColor(R.color.green));
-        } else if ((que_1_op_1.isChecked()) && (que_1_op_3.isChecked())) {
-            que_1_op_1.setBackgroundResource(R.drawable.border);
-            que_1_op_3.setBackgroundResource(R.drawable.border);
-            que_1_op_2.setBackgroundColor(getResources().getColor(R.color.green));
         } else {
             que_1_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_1_op_2.setBackgroundColor(getResources().getColor(R.color.green));
@@ -237,21 +240,21 @@ public class second_activity extends AppCompatActivity {
     }
 
     private void check_que_4_ans() {
-        if ((que_4_op_1.isChecked()) && (que_4_op_2.isChecked()) && (que_4_op_3.isChecked())) {
+        if ((que_4_op_1.isChecked()) && (que_4_op_2.isChecked()) && (que_4_op_3.isChecked()) && !(que_4_op_4.isChecked())) {
             que_4_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_3.setBackgroundColor(getResources().getColor(R.color.green));
             score += 5;
         } else if (que_4_op_1.isChecked()) {
-            que_4_op_1.setBackgroundResource(R.drawable.border);
+            que_4_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_3.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (que_4_op_2.isChecked()) {
-            que_4_op_2.setBackgroundResource(R.drawable.border);
+            que_4_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_3.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (que_4_op_3.isChecked()) {
-            que_4_op_3.setBackgroundResource(R.drawable.border);
+            que_4_op_3.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_2.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (que_4_op_4.isChecked()) {
@@ -259,18 +262,6 @@ public class second_activity extends AppCompatActivity {
             que_4_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_3.setBackgroundColor(getResources().getColor(R.color.green));
-        } else if ((que_4_op_2.isChecked()) && (que_4_op_3.isChecked())) {
-            que_4_op_2.setBackgroundResource(R.drawable.border);
-            que_4_op_3.setBackgroundResource(R.drawable.border);
-            que_4_op_1.setBackgroundColor(getResources().getColor(R.color.green));
-        } else if ((que_4_op_1.isChecked()) && (que_4_op_2.isChecked())) {
-            que_4_op_1.setBackgroundResource(R.drawable.border);
-            que_4_op_2.setBackgroundResource(R.drawable.border);
-            que_4_op_3.setBackgroundColor(getResources().getColor(R.color.green));
-        } else if ((que_4_op_1.isChecked()) && (que_4_op_3.isChecked())) {
-            que_4_op_1.setBackgroundResource(R.drawable.border);
-            que_4_op_3.setBackgroundResource(R.drawable.border);
-            que_4_op_2.setBackgroundColor(getResources().getColor(R.color.green));
         } else {
             que_4_op_1.setBackgroundColor(getResources().getColor(R.color.green));
             que_4_op_2.setBackgroundColor(getResources().getColor(R.color.green));
@@ -366,21 +357,21 @@ public class second_activity extends AppCompatActivity {
     }
 
     private void check_que_10_ans() {
-        if ((que_10_op_2.isChecked()) && (que_10_op_3.isChecked()) && (que_10_op_4.isChecked())) {
+        if ((que_10_op_2.isChecked()) && (que_10_op_3.isChecked()) && (que_10_op_4.isChecked()) && !(que_10_op_1.isChecked())) {
             que_10_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_3.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_4.setBackgroundColor(getResources().getColor(R.color.green));
             score += 5;
         } else if (que_10_op_2.isChecked()) {
-            que_10_op_2.setBackgroundResource(R.drawable.border);
+            que_10_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_3.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_4.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (que_10_op_3.isChecked()) {
-            que_10_op_3.setBackgroundResource(R.drawable.border);
+            que_10_op_3.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_4.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (que_10_op_4.isChecked()) {
-            que_10_op_4.setBackgroundResource(R.drawable.border);
+            que_10_op_4.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_3.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_2.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (que_10_op_1.isChecked()) {
@@ -388,18 +379,6 @@ public class second_activity extends AppCompatActivity {
             que_10_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_3.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_4.setBackgroundColor(getResources().getColor(R.color.green));
-        } else if ((que_10_op_2.isChecked()) && (que_10_op_3.isChecked())) {
-            que_10_op_2.setBackgroundResource(R.drawable.border);
-            que_10_op_3.setBackgroundResource(R.drawable.border);
-            que_10_op_4.setBackgroundColor(getResources().getColor(R.color.green));
-        } else if ((que_10_op_2.isChecked()) && (que_10_op_4.isChecked())) {
-            que_10_op_2.setBackgroundResource(R.drawable.border);
-            que_10_op_4.setBackgroundResource(R.drawable.border);
-            que_10_op_3.setBackgroundColor(getResources().getColor(R.color.green));
-        } else if ((que_10_op_4.isChecked()) && (que_10_op_3.isChecked())) {
-            que_10_op_4.setBackgroundResource(R.drawable.border);
-            que_10_op_3.setBackgroundResource(R.drawable.border);
-            que_10_op_2.setBackgroundColor(getResources().getColor(R.color.green));
         } else {
             que_10_op_2.setBackgroundColor(getResources().getColor(R.color.green));
             que_10_op_3.setBackgroundColor(getResources().getColor(R.color.green));

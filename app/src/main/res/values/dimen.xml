@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="app_name_size">35sp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
     <dimen name="tagline_size">20sp</dimen>
     <dimen name="tagline_margin">18dp</dimen>
     <dimen name="margin">8dp</dimen>
